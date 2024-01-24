@@ -1,0 +1,177 @@
+body{
+	height: 100%; background: url("BG.jpeg");background-size: cover;
+	font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif",whitesmoke;
+}
+BG.jpeg{opacity:0.5;filter: alpha(opacity=50);-moz-opacity:0.5;}
+#collection-list, #shop{
+	postion:center; margin:5px; display:inline-block;
+}
+#collection-list{
+	background-color:whitesmoke; display:inline-block;
+}
+#shop{
+	position:center; background-color:aliceblue;
+}
+#add{
+	position:center; bottom:0px;
+}
+#edit-collection{
+	position:center; bottom:0px;
+}
+
+/*header*/
+.header-line {
+    width: 100%;
+    height: 4px;
+    background: #0dbfdd;
+}
+
+/*content*/
+.content {
+    margin: 70px auto 0;
+    text-align: center;
+}
+.content-logo {
+    width: 100px;
+    height: 100px;
+}
+.content-title {
+    margin: 10px 0 25px 0;
+    font-size: 2em;
+    color: black;
+    font-weight: normal;
+}
+.content-form {
+    width: auto;
+    padding: 80px 10 40px;
+    border: 5px solid  #42C85A;
+    text-align: center;
+    background: transparent;
+}
+.content-form form div {
+    margin-bottom: 25px;
+}
+.content-form form .user,
+.content-form form .password {
+	width: auto;
+    height: auto;
+    padding: 20px;
+    font-size: 1em;
+    border: 1px solid  #fff;
+    border-radius: 7px;
+    letter-spacing: 1px;
+}
+.content-form form input:focus {
+    outline: none;
+    -webkit-box-shadow: 0 0 5px #0dbfdd;
+            box-shadow: 0 0 5px #0dbfdd;
+}
+.content-form-signup {
+    width: auto;
+	height:15px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid  #cccbcb;
+    border-radius: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: #0dbfdd;
+    cursor: pointer;
+}
+.content-form-signup:hover {
+    background: blue;
+}
+.content-form-signup:focus {
+    outline: none;
+    border: 1px solid  #0cb3d0;
+}
+.content-login-description {
+    margin-top: 23px;
+    line-height: 1.4;
+    color: blanchedalmond;
+    font-size: .91666667rem;
+}
+.content-login-link {
+    font-size: 23px;
+    color: #0dbfdd;
+    text-decoration: none;
+}
+
+/*输入框无内容便提示*/
+#remind_1,
+#remind_2,
+#remind_3,
+#remind_4,
+#remind_5,
+#remind_6,{
+    width: 76%;
+    margin: 0 auto 5px;
+    text-align: center;
+    font-size: .4em;
+    color: #f00;
+}
+* { margin: 0; padding: 0; }
+
+html { height: 100%; }
+
+.dowebok {
+	position: absolute;
+	left: 948px;
+	top: 358px;
+	width: 346px;
+	height: 472px;
+	margin: -300px 0 0 -215px;
+	border: 1px solid palegoldenrod;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.logo { width: 150px; height: 150px; margin: 40px auto 50px; background: transparent 10px 10px no-repeat; }
+
+.form-item { position: relative; width: 360px; margin: 0 auto; padding-bottom: 30px;}
+
+.form-item input { width: 288px; height: 48px; padding-left: 70px; border: 1px solid #fff; border-radius: 25px; font-size: 18px; color:palegoldenrod; background-color: transparent; outline: none;}
+
+.form-item button { width: 288px; height: 50px;padding-left: 70px; border: 1px solid #fff; border-radius: 25px; font-size: 18px;color:#fff; outline: none; cursor: pointer; background-color: transparent; }
+
+#username { background:  transparent  20px 14px no-repeat; }
+
+#password { background:  transparent 23px 11px no-repeat; }
+
+.tip { display: none; position: absolute; left: 20px; top: 52px; font-size: 14px; color: #f50; }
+
+.reg-bar { width: 360px; margin: 20px auto 0; font-size: 14px; overflow: hidden;}
+
+.reg-bar a { color: #fff; text-decoration: none; }
+
+.reg-bar a:hover { text-decoration: underline; }
+
+.reg-bar .reg { float: left; }
+
+.reg-bar .forget { float: right; }
+
+.dowebok ::-webkit-input-placeholder { font-size: 18px; line-height: 1.4; solid;color: #fff;}
+
+.dowebok :-moz-placeholder { font-size: 18px; line-height: 1.4;solid; color: #fff;}
+
+.dowebok ::-moz-placeholder { font-size: 18px; line-height: 1.4;solid; color: #fff;}
+
+.dowebok :-ms-input-placeholder { font-size: 18px; line-height: 1.4;solid; color: #fff;}
+
+ 
+
+@media screen and (max-width: 500px) {
+* { box-sizing: border-box; }
+
+.dowebok { position: static; width: auto; height: auto; margin: 0 30px; border: 0; border-radius: 0; }
+
+.logo { margin: 50px auto; }
+
+.form-item { width: auto; }
+
+.form-item input, .form-item button, .reg-bar { width: 100%; }
+
+}
+
+

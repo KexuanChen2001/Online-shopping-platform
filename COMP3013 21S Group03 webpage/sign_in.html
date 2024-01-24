@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	     <meta charset="UTF-8">
+    	<title>sign-up</title>
+    	<link rel="stylesheet" href="Ourstyle.css"/>
+	</head>
+	<body>
+		<h1 style="font-size:30px;color: aliceblue">Database Management System Group Project</h1>
+		<table id="MAIN">
+			<tr>
+				<td width="298"></td>
+				<td> </td>
+				<td width="299" rowspan="3">
+				<div class="content">
+                    <h1 class="content-title" align="center">Create Account</h1>
+                    <div class="content-form">
+					
+                    <form method="post" action="addBuyerORSeller.php" method = "POST" >
+						<!---add the check box-->
+					<div id="change_margin_0">
+						<input type = "hidden"  name = "choice"  value = "0" >
+						<input type="checkbox"  name = "choice"  id = "choice"  value = "1" >check if you are seller(keep initial if you are buyer)
+						</br>
+					</div>
+                    <div id="change_margin_1">
+                        <input class="user" type="text" name="userID" placeholder="Please input userID" onblur="oBlur_1()" onfocus="oFocus_1()">
+					</div>
+					<div id="change_margin_2">
+						<input class="user" type="text" name="nickname" placeholder="Please input nickname" onblur="oBlur_2()" onfocus="oFocus_1()">
+					</div>
+					<div id="change_margin_3">
+						<input class="user" type="text" name="e-mail" placeholder="Please input E-mail" onblur="oBlur_3()" onfocus="oFocus_1()">
+					</div>
+					<div id="change_margin_4">
+						<input class="user" type="text" name="phoneNumber" placeholder="Please input phone number" onblur="oBlur_4()" onfocus="oFocus_1()">
+					</div>
+					<div id="change_margin_5">
+						<input class="user" type="text" name="gender" placeholder="Please input gender" onblur="oBlur_5()" onfocus="oFocus_1()">
+					</div>    
+					
+                    <!-- input的value为空时弹出提醒 -->
+                    <p id="remind_1"></p>
+                    <div id="change_margin_6">
+                        <input class="password" type="password" name="password" placeholder="Please input password" onblur="oBlur_6()" onfocus="oFocus_2()">
+                    </div>
+                    <!-- input的value为空时弹出提醒 -->
+                    <p id="remind_2"></p>
+                    <div id="change_margin_7">
+                        <input class="content-form-signup" type="submit" value="Create Account">
+                    </div>
+                    </form onsubmit="return submitTest()">
+					
+        		</div>
+        		<div class="content-login-description">Already Have?</div>
+       			<div><a class="content-login-link" href="loginPage.html">Back to login</a></div>
+   				</div>
+				  <script src="common.js"></script>
+			  </td>
+			</tr>
+			<tr>
+				<td height="405" rowspan="2"><img src="Today.jpeg" width="247" height="199" style="width: 300px;height: 300px"/></td>
+				<td width="441" rowspan="3" align="justify" style="color:blanchedalmond"><div align="center">
+				  <p>!!TODAY'S NEWEST ONE!!!
+				  <br/>
+				  <br/>!!LOGIN IN TO GET IT WITH DISCOUNT!!
+				  </p>
+				  <p>&nbsp;</p>
+				  <p>When you are logining<br/>
+				  <br/>Please input complete userID
+				  <br/>
+				  <br/>Please input complete password
+				  </p>
+				</div></td>
+				<td width="31" rowspan="2">
+				</td>
+			</tr>
+			</table>
+			<table style="color:whitesmoke">
+			<tr>
+				<td width="225"></td>
+				<td colspan="2">Student1 Name: CHEN Kexuan</td>
+				<td width="195">Student1 ID: 1930026012</td>
+			</tr>
+			<tr>
+				<td><p style="font-size:40px"><em>Group</em></p></td>
+				<td colspan="2">Student2 Name: HUANG Shaoxuan</td>
+				<td width="195">Student2 ID: 1930026048</td>
+			</tr>
+			<tr>
+				<td><p style="font-size:40px"><em>Member</em></p></td>
+				<td colspan="2">Student3 Name: OUYANG Runcheng</td>
+				<td>Student3 ID:1930026012</td>
+			</tr>
+			<tr>
+				<td><p style="font-size:40px"><em>Information</em></p></td>
+				<td colspan="2">Student4 Name: YUAN Hannan</td>
+				<td>Student4 ID:1830024337</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2">Student5 Name: JIN Baihui</td>
+				<td>Student5 ID: 1930026</td>
+			</tr>
+			</table>
+	</body>
+</html>

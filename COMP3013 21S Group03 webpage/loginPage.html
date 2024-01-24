@@ -1,0 +1,99 @@
+<html>
+    <head>
+	     <title>LoginPage</title>
+		 <link rel="stylesheet" href="Ourstyle.css"/>
+	</head>
+	<body>
+		<h1 style="font-size:30px;color: aliceblue">Database Management System Group Project</h1>
+		<table id="MAIN">
+			<tr>
+				<td width="298"></td>
+				<td> </td>
+				<td width="299" rowspan="3">
+					<div class="dowebok">
+						<div class="logo" colspan="2" align="left" style="font: solid;18pxfont-size: 18px; line-height: 1.4"> 
+                        	LOGIN to Start Your Jounery <br/>
+                            in Our Shop <br/>
+                            and Enjoy Yourself!&nbsp;
+						</div>
+                        <form  action="checkout.php" method="post" >
+							<!---add the check box-->
+							<div id="change_margin_0">
+								<input type = "hidden"  name = "choice"  value = "0" ></input>
+								<input type="checkbox"  name = "choice"  id = "choice"  value = "1">check if you are seller(keep initial if you are buyer)</input>
+							</div>
+						<div class="form-item" align="center" >
+							<input id="username" name = "username" type="text" autocomplete="off" placeholder="Your Seller/Buyer ID">
+						</div>
+                        <!-- input的value为空时弹出提醒 -->
+               			<p id="remind_1"></p>
+						<div class="form-item" align="center">
+							<input id="password" name = "password" type="password" autocomplete="off" placeholder="LOGIN PASSWORD">
+						</div>
+                        <!-- input的value为空时弹出提醒 -->
+               			<p id="remind_1"></p>
+						<div class="form-item" align="center">
+							<button type="submit">LOGIN</a>
+							</button>
+						</div>
+						<div "reg-bar">
+							<a class="reg" href="javascript:">Register Now</a>
+							<a class="forget" href="javascrpt:">Forgot Password</a>
+						</div>
+                        </form onsubmit="return submitTest()">
+					</div>
+					<td>
+						<div class="content-login-description">No Account?</div>
+						<div><a class="content-login-link" href="sign_in.html">SIGN IN NOW!</a></div>
+						<script src="js/common.js"></script>
+					 </td>
+			  </td>
+			</tr>
+			<tr>
+				<td height="405" rowspan="2"><img src="Today.jpeg" width="247" height="199" style="width: 300px;height: 300px"/></td>
+				<td width="441" rowspan="3" align="justify" style="color:red"><div align="center">
+				  <p>!!TODAY'S NEWEST ONE!!!
+				  <br/>
+				  <br/>!!LOGIN IN TO GET IT WITH DISCOUNT!!
+				  </p>
+				  <p>&nbsp;</p>
+				  <p>When you are logining<br/>
+				  <br/>Please input complete userID
+				  <br/>
+				  <br/>Please input complete password
+				  </p>
+				</div></td>
+				<td width="31" rowspan="2">
+				</td>
+			</tr>
+			
+			</table>
+			<table style="color:whitesmoke">
+			<tr>
+				<td width="225"></td>
+				<td colspan="2">Student1 Name: CHEN Kexuan</td>
+				<td width="195">Student1 ID: 1930026012</td>
+			</tr>
+			<tr>
+				<td><p style="font-size:40px"><em>Group</em></p></td>
+				<td colspan="2">Student2 Name: HUANG Shaoxuan</td>
+				<td width="195">Student2 ID: 1930026048</td>
+			</tr>
+			<tr>
+				<td><p style="font-size:40px"><em>Member</em></p></td>
+				<td colspan="2">Student3 Name: OUYANG Runcheng</td>
+				<td>Student3 ID:1930026012</td>
+			</tr>
+			<tr>
+				<td><p style="font-size:40px"><em>Information</em></p></td>
+				<td colspan="2">Student4 Name: YUAN Hannan</td>
+				<td>Student4 ID:1830024337</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colspan="2">Student5 Name: JIN Baihui</td>
+				<td>Student5 ID: 1930026058</td>
+			</tr>
+			</table>
+	</body>
+</html>
